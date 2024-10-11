@@ -1,0 +1,118 @@
+.main-header .logo .logo-mini img {
+  max-width: 60px;
+}
+
+.img-preview {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-preview .photo img {
+  height: 100px;
+  width: 115px;
+  object-fit: cover;
+}
+
+.remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: unset;
+  border: unset;
+  transition: 0.3s;
+}
+
+.remove:hover {
+  background: unset;
+  color: white;
+  border: unset;
+  transform: scale(1.2);
+}
+
+th {
+  background-image: linear-gradient(180deg, #6464bc 0%, #3c3b94 74%) !important;
+}
+
+.box.box-primary {
+  border-top-color: #aeb0b5;
+}
+
+.main-header .sidebar-toggle {
+  background: #6464be !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  background: #434499 !important;
+}
+
+.add-prdcts .box-body {
+  min-height: 345px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.add-prdcts .img-preview {
+  margin-top: 6px;
+}
+
+.skin-blue .sidebar-menu .treeview-menu > li > a {
+  color: #8484c5;
+}
+
+/* Multi Img Selector */
+.multiple-img-selector .img-thumbs {
+  /* background: #eee; */
+  /* border: 1px solid #ccc; */
+  border-radius: 0.25rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+}
+.multiple-img-selector .img-thumbs-hidden {
+  display: none;
+}
+
+.multiple-img-selector .wrapper-thumb {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  justify-content: space-around;
+}
+
+.multiple-img-selector .img-preview-thumb {
+  background: #fff;
+  border: 1px solid none;
+  border-radius: 0.25rem;
+  box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.12);
+  margin-right: 1rem;
+  max-width: 140px;
+  padding: 0.25rem;
+}
+
+.multiple-img-selector .remove-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  top: -5px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.multiple-img-selector .remove-btn:hover {
+  box-shadow: 0px 0px 3px grey;
+  transition: all 0.3s ease-in-out;
+}
+/* Multi Img Selector */

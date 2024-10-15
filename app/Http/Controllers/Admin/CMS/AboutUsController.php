@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Yajra\DataTables\DataTables;
 use App\Traits\MediaTrait;
+use App\Models\Arm_about_us;
+use App\Models\Arm_why_choose_us;
 
 class AboutUsController extends Controller
 {
@@ -257,6 +259,11 @@ class AboutUsController extends Controller
         }
         
     }
+    public function show(){
+        $about = Arm_about_us::where('status', '=', 'active')->first();
+        $why_us_content = Arm_why_choose_us::where('status','=','active')->get();
+        return view('front.about-us',compact('about','why_us_content'));
+     }
 
     public function data_table(Request $request)
     {
